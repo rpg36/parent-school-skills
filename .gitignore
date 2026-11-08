@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Build output
+dist/
+*.tar.gz
+
+# Site-specific notes and downloads never belong in the public repo
+*/references/local-notes.md
+parentvue-documents/
+*.env
