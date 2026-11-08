@@ -31,7 +31,7 @@ including **Claude Code**, **OpenAI Codex** and **Hermes Agent**.
 ## Install
 
 ```bash
-git clone https://github.com/<you>/parent-school-skills.git
+git clone https://github.com/rpg36/parent-school-skills.git
 cd parent-school-skills
 ```
 
