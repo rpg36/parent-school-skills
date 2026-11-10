@@ -2,21 +2,10 @@
 name: canvas-grades
 description: Read a student's grades, assignment scores, missing or late work, upcoming due dates and teacher comments from the school's Canvas LMS through a parent (observer) account. Strictly read-only. Use when a parent asks how their child is doing in school, what's missing or due, or wants to track grade trends.
 license: MIT
-compatibility: Needs python3 (3.8+, standard library only), a shell tool, and outbound HTTPS to the school's Canvas host.
+compatibility: Needs python3 (3.8+, standard library only), a shell tool, and outbound HTTPS to the school's Canvas host. Credentials come from CANVAS_BASE_URL and CANVAS_TOKEN or the file written by the script's configure command.
 metadata:
+  author: rpg36
   version: "1.1.0"
-  hermes:
-    tags: [Education, School, Grades, Canvas, Parenting]
-    requires_toolsets: [terminal]
-required_environment_variables:
-  - name: CANVAS_BASE_URL
-    prompt: "School Canvas address (e.g. https://yourdistrict.instructure.com)"
-    help: "The address in your browser's address bar when you are logged in to Canvas."
-    required_for: "Canvas API access"
-  - name: CANVAS_TOKEN
-    prompt: "Canvas access token from the parent account"
-    help: "In Canvas: Account > Settings > Approved Integrations > + New Access Token"
-    required_for: "Canvas API access"
 ---
 
 # Canvas Grades (read-only)

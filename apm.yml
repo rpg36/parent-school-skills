@@ -1,0 +1,10 @@
+# APM package manifest (https://microsoft.github.io/apm/).
+# The skills themselves follow the Agent Skills spec (https://agentskills.io) and
+# live in skills/<name>/SKILL.md, so they also work without APM.
+name: parent-school-skills
+version: 1.0.0
+description: Read-only Agent Skills for a parent's view of Canvas LMS and ParentVUE (Synergy) school records.
+author: rpg36
+license: MIT
+type: skill
+includes: auto

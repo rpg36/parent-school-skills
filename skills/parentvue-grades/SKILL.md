@@ -2,24 +2,10 @@
 name: parentvue-grades
 description: Read a student's school records from ParentVUE (Edupoint Synergy) through the parent account - attendance (absences and tardies with reasons, school-year totals), class schedule with teachers' names and emails, and, where the district enables them, gradebook marks, assignments and report-card documents. Strictly read-only. Use for attendance, schedule, teacher-contact or grade questions, and alongside canvas-grades for a full picture.
 license: MIT
-compatibility: Needs python3 (3.8+, standard library only), a shell tool, and outbound HTTPS to the district's ParentVUE host.
+compatibility: Needs python3 (3.8+, standard library only), a shell tool, and outbound HTTPS to the district's ParentVUE host. Credentials come from PARENTVUE_BASE_URL, PARENTVUE_USERNAME and PARENTVUE_PASSWORD or the file written by the script's configure command.
 metadata:
+  author: rpg36
   version: "2.2.0"
-  hermes:
-    tags: [Education, School, Attendance, Schedule, ParentVUE, Synergy, Parenting]
-    related_skills: [canvas-grades]
-    requires_toolsets: [terminal]
-required_environment_variables:
-  - name: PARENTVUE_BASE_URL
-    prompt: "ParentVUE address (e.g. https://yourdistrict-psv.edupoint.com)"
-    help: "The scheme and host from the ParentVUE login page, without any path."
-    required_for: "ParentVUE access"
-  - name: PARENTVUE_USERNAME
-    prompt: "ParentVUE username (parent account)"
-    required_for: "ParentVUE access"
-  - name: PARENTVUE_PASSWORD
-    prompt: "ParentVUE password (parent account)"
-    required_for: "ParentVUE access"
 ---
 
 # ParentVUE (read-only)

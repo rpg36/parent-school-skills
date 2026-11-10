@@ -15,7 +15,7 @@
 # touched; set them up afterwards with each script's `configure` command.
 set -euo pipefail
 cd "$(dirname "$0")"
-src_root=$(pwd)
+src_root=$(pwd)/skills
 
 ALL_SKILLS=(canvas-grades parentvue-grades)
 targets=() skills=() notes_dir='' link=0

@@ -17,7 +17,7 @@ from unittest import mock
 import urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "..", "canvas-grades", "scripts"))
+sys.path.insert(0, os.path.join(HERE, "..", "skills", "canvas-grades", "scripts"))
 import canvas_read  # noqa: E402
 
 TOKEN = "secret-test-token-123"

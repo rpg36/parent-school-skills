@@ -17,7 +17,7 @@ import unittest
 from unittest import mock
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "..", "parentvue-grades", "scripts"))
+sys.path.insert(0, os.path.join(HERE, "..", "skills", "parentvue-grades", "scripts"))
 import parentvue_read as pv  # noqa: E402
 
 USER, PASSWORD = "parent@example.com", 's3cret:&"pw'

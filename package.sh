@@ -30,7 +30,7 @@ staging=$(mktemp -d)
 trap 'rm -rf "${staging}"' EXIT
 
 for skill in "${SKILLS[@]}"; do
-  cp -R "${skill}" "${staging}/"
+  cp -R "skills/${skill}" "${staging}/"
   find "${staging}/${skill}" \( -name '__pycache__' -o -name '*.pyc' -o -name '.DS_Store' \) -prune -exec rm -rf {} +
   if [[ -n ${notes_dir} && -f ${notes_dir}/${skill}.md ]]; then
     cp "${notes_dir}/${skill}.md" "${staging}/${skill}/references/local-notes.md"
